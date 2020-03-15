@@ -15,12 +15,12 @@
 
 *Использование:*
 
-| Действие   | Метод   | Путь | Данные |
+| Действие   | Метод   | Путь | Тело запроса |
 | :--------: | :-----: | :----: | :---: |
-| Извлечение списка магазинов | GET | /shops?page=1&limit=5 | |
-| Получение информации по магазину | GET | /shop/{id} | |
-| Создание отзыва | POST | /review | ```javascript { "shop_id": 1, "text": "Good shop", "author": "Ivanov", "file": "/folder/image.png" } ```|
-| Получение отзыва | GET | /review/{id} | |
-| Получение списка отзывов | GET | /reviews | |
-| Редактирование отзыва | PUT | /review/{id} | ```javascript {"author": "TEST"} ``` |
-| Удаление отзыва | DELETE | /review/{id} | |
+| Извлечение списка магазинов | GET | /shops?page=1&limit=5 | - |
+| Получение информации по магазину | GET | /shop/{id} | - |
+| Создание отзыва | POST | /review | { "shop": 1, <br> "text": "Good shop", <br> "author": "Ivanov", <br> "file": "/folder/image.png" } |
+| Получение отзыва | GET | /review/{id} | - |
+| Получение списка отзывов | GET | /reviews | - |
+| Редактирование отзыва | PUT | /review/{id} | {"author": "TEST"} |
+| Удаление отзыва | DELETE | /review/{id} | - |
